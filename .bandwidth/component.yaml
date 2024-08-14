@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  schemaVersion: v1.0.0
+  description: Forked from https://github.com/cypress-io/github-action
+  annotations:
+    github.com/project-slug: cypress-io/github-action
+  organization: BW
+  costCenter: UNKNOWN
+  platformType: Docker Swarm
+  buildPlatform: GitHub Actions
+spec:
+  type: GitHub Action
+  owner: github/band-swi
+  lifecycle: |
+    Prototype
+    dependsOn:
+        - resource:platform/Docker Swarm
+        - resource:cost-center/UNKNOWN
