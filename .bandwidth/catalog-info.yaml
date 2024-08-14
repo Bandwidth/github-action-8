@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  schemaVersion: v1.0.0
+  name: github-action-location
+  description: Links to additional entities in the github-action repository.
+  annotations:
+    github.com/project-slug: cypress-io/github-action
+spec:
+  targets:
+    - ./.bandwidth/component.yaml
+    - ./.github/CODEOWNERS
